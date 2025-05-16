@@ -62,7 +62,7 @@ public class LocalizedMessageUtils {
 
     private String fallbackMessage(String code, Locale locale) {
         log.warn("Message not found for code '{}' and locale '{}'", code, locale);
-        return "[!" + code + "!]";
+        return "[" + code + "]";
     }
 
     /**

@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.math.BigDecimal;
 import java.util.Currency;
 import java.util.Locale;
+import java.util.Map;
 
 @Slf4j
 @SpringBootApplication
@@ -30,9 +31,14 @@ public class OlmosjtUtilsApplication {
     ApplicationUtils.logApplicationStartup(env);
   }
 
-  @GetMapping()
-  public String getMessage() {
-    return localizedMessageUtils.getMessageForLocale("welcome.user", Locale.of("ru"), "olmos.jt", "face", "bitch");
+  @GetMapping("/en")
+  public String getEnMessage() {
+    return localizedMessageUtils.getMessage("err.validation", "olmos.jt");
+  }
+
+  @GetMapping("/uz")
+  public String getUzMessage() {
+    return localizedMessageUtils.getMessageForLocale("err.validation", Locale.of("uz"), "olmos.jt");
   }
 
 }

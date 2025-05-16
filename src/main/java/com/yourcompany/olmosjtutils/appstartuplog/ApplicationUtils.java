@@ -42,7 +42,6 @@ import java.util.Arrays;
  * <pre><code class="language-java">
  *
  * &#64;SpringBootApplication
- * &#64;EnableScheduling
  * public class SpringBootApplication {
  *
  *   public static void main(String[] args) {

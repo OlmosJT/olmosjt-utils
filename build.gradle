@@ -28,6 +28,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
 //    Actuator
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+//    AOP
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
 //    Validation
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
